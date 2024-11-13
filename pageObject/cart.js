@@ -18,7 +18,7 @@ exports.CartProcess = class CartProcess {
     this.country = page.getByRole("combobox", { name: "Country:" });
     this.state = page.getByRole("combobox", { name: "State / province:" });
 
-    this.city = page.getByRole("textbox", { name: "City:" })
+    this.city = page.getByRole("textbox", { name: "City:" });
     this.pincode = page.getByRole("textbox", { name: "Zip / postal code:" });
     this.phoneNumber = page.getByRole("textbox", { name: "Phone number:" });
     this.address = page.getByRole("textbox", { name: "Address 1:" });

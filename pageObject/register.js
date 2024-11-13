@@ -28,10 +28,16 @@ exports.RegisterPage = class RegisterPage {
   }
 
   async fillPassword(password) {
-    await this.page.getByRole("textbox", { name: "Password" }).first().fill(password);
+    await this.page
+      .getByRole("textbox", { name: "Password" })
+      .first()
+      .fill(password);
   }
   async fillConfirmPassword(password) {
-    await this.page.getByRole("textbox", { name: "Password" }).last().fill(password);
+    await this.page
+      .getByRole("textbox", { name: "Password" })
+      .last()
+      .fill(password);
   }
 
   async registerMethod(
